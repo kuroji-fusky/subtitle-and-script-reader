@@ -1,12 +1,10 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from "tailwindcss";
+import typies from "@tailwindcss/typography";
+
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{ts,vue}"],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [typies],
+} as Config;
