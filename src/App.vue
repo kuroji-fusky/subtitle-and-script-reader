@@ -45,9 +45,6 @@ onMounted(() => {
           : 'opacity-0 pointer-events-none scale-110',
       ]"
     >
-      <span class="text-white text-lg"
-        >Press <kbd class="p-1 bg-red-500 rounded-md">ESC</kbd> to exit.</span
-      >
       <ReaderModal />
       <div
         id="lower-third"
@@ -59,6 +56,9 @@ onMounted(() => {
           <Button>Restart from beginning (R)</Button>
           <Button>Next subtitle (➡️)</Button>
         </div>
+        <span class="text-white text-lg"
+          >Press <kbd class="p-1 bg-red-500 rounded-md">ESC</kbd> to exit.</span
+        >
       </div>
     </div>
   </div>
